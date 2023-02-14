@@ -20,13 +20,13 @@ const game = new Phaser.Game(config);
 const gameState = {};
  
 function preload() {
-    this.load.image('ball', '/new_ball copy.png');
-    this.load.image('peg', '/peg copy.png');
-    this.load.image('prize1', '/prizebox1.png')
-    this.load.image('prize2', '/prizebox2.png')
-    this.load.image('prize3', '/prizebox3.png')
-    this.load.image('prize4', '/prizebox4.png')
-    this.load.image('prize5', '/prizebox5.png')
+    this.load.image('ball', '/games/Plinko_final/new_ball copy.png');
+    this.load.image('peg', '/games/Plinko_final//peg copy.png');
+    this.load.image('prize1', '/games/Plinko_final//prizebox1.png')
+    this.load.image('prize2', '/games/Plinko_final//prizebox2.png')
+    this.load.image('prize3', '/games/Plinko_final//prizebox3.png')
+    this.load.image('prize4', '/games/Plinko_final//prizebox4.png')
+    this.load.image('prize5', '/games/Plinko_final//prizebox5.png')
 
 }
 
