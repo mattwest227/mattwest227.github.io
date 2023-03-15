@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt's Wordle</title>
+    <link rel="stylesheet" href="./wordle1.css">
+</head>
+
+<body>
+<form action="./wordle1.js" method="get" autocomplete="off">
+    <input class="letter" maxlength="1" id="0" onkeyup="autoTab('1')" tabindex="-1" autofocus> 
+    <input class="letter" maxlength="1" id="1" onkeyup="autoTab('2')" tabindex="-1">
+    <input class="letter" maxlength="1" id="2" onkeyup="autoTab('3')" tabindex="-1">
+    <input class="letter" maxlength="1" id="3" onkeyup="autoTab('4')" tabindex="-1">
+    <input class="letter" maxlength="1" id="4" tabindex="-1">
+    <input type = "button" class="enter" id="btn1" value="ENTER" tabindex="-1">
+    <br>
+
+    <input class="letter" maxlength="1" id="5" onkeyup="autoTab('6')" tabindex="-1"> 
+    <input class="letter" maxlength="1" id="6" onkeyup="autoTab('7')" tabindex="-1">
+    <input class="letter" maxlength="1" id="7" onkeyup="autoTab('8')" tabindex="-1">
+    <input class="letter" maxlength="1" id="8" onkeyup="autoTab('9')" tabindex="-1">
+    <input class="letter" maxlength="1" id="9" tabindex="-1">
+    <input type = "button" class="enter" id="btn2" value="ENTER" tabindex="-1">
+    <br>
+
+
+    <input class="letter" maxlength="1" id="10" onkeyup="autoTab('11')" tabindex="-1"> 
+    <input class="letter" maxlength="1" id="11" onkeyup="autoTab('12')" tabindex="-1">
+    <input class="letter" maxlength="1" id="12" onkeyup="autoTab('13')" tabindex="-1">
+    <input class="letter" maxlength="1" id="13" onkeyup="autoTab('14')" tabindex="-1">
+    <input class="letter" maxlength="1" id="14" tabindex="-1">
+    <input type = "button" class="enter" id="btn3" value="ENTER" tabindex="-1">
+    <br>        
+    <input class="letter" maxlength="1" id="15" onkeyup="autoTab('16')" tabindex="-1"> 
+    <input class="letter" maxlength="1" id="16" onkeyup="autoTab('17')" tabindex="-1">
+    <input class="letter" maxlength="1" id="17" onkeyup="autoTab('18')" tabindex="-1">
+    <input class="letter" maxlength="1" id="18" onkeyup="autoTab('19')" tabindex="-1">
+    <input class="letter" maxlength="1" id="19" tabindex="-1">
+    <input type = "button" class="enter" id="btn4" value="ENTER" tabindex="-1">
+    <br>        
+    <input class="letter" maxlength="1" id="20" onkeyup="autoTab('21')" tabindex="-1"> 
+    <input class="letter" maxlength="1" id="21" onkeyup="autoTab('22')" tabindex="-1">
+    <input class="letter" maxlength="1" id="22" onkeyup="autoTab('23')" tabindex="-1">
+    <input class="letter" maxlength="1" id="23" onkeyup="autoTab('24')" tabindex="-1">
+    <input class="letter" maxlength="1" id="24" tabindex="-1">
+    <input type = "button" class="enter" id="btn5" value="ENTER" tabindex="-1">
+    <br>        
+    <input class="letter" maxlength="1" id="25" onkeyup="autoTab('26')" tabindex="-1"> 
+    <input class="letter" maxlength="1" id="26" onkeyup="autoTab('27')" tabindex="-1">
+    <input class="letter" maxlength="1" id="27" onkeyup="autoTab('28')" tabindex="-1">
+    <input class="letter" maxlength="1" id="28" onkeyup="autoTab('29')" tabindex="-1">
+    <input class="letter" maxlength="1" id="29" tabindex="-1">
+    <input type = "button" class="enter" id="btn6" value="ENTER" tabindex="-1">
+    <br>    
+</form>
+
+<h1> Used:</h1>
+<p id="wrong"></p>
+<!--
+<div class="kbd">
+    
+</div>
+
+    <script>
+        function autoTab(field) {
+            document.getElementById(field).focus()
+        }
+
+    </script>
+    -->
+<script src="./wordle1.js"></script>
+ <!--   <script>
+        document.addEvenListener(onclick, rowTab);
+        function rowTab() {
+            let x = document.getElementById(field)
+            if (field === 'e') {
+                autoTab('f')
+            }
+        }
+
+    </script>
+   -->
+</body>
+</html>
