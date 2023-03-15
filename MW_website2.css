@@ -9,10 +9,22 @@
  */
 
 @media screen and (max-width: 700px) {
-    .banner .navbar {
+    .banner .navbar p {
         display: none;
-    }    
+    };
+    .banner .navbar .burger {
+        display: inline;
+        float: right;
+        margin: 20px;
+        z-index: 10;
+    };
+
+} 
+
+.burger {
+    display: none;
 }
+
 .banner {
     background-color:lightgray ;
     display: inline;
