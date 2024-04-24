@@ -9,6 +9,20 @@
 </head>
 
 <body>
+    <div class="outer">
+    <div class="panel">
+        <img src="/wordle type.png" class="graphic">
+        <div class="banner">
+            <p class="inst">GUESS THE 5-LETTER WORD IN 6 TRIES</p>
+            <p class="inst">A GREEN square means that letter is in the correct spot</p>
+            <p class="inst">A GOLD square means that letter is in the word, but not in that spot</p>
+            <p class="inst">A GRAY square means that letter is not in the word</p>
+            <h1 class="inst">Enter a 5-letter word then click 'ENTER'</h1>
+        </div>
+    </div>
+    <a style="text-align:center;" href="/games/games.html">Back to Games </a>
+</div>
+
 <form action="./wordle1.js" method="get" autocomplete="off">
     <input class="letter" maxlength="1" id="0" onkeyup="autoTab('1')" tabindex="-1" autofocus> 
     <input class="letter" maxlength="1" id="1" onkeyup="autoTab('2')" tabindex="-1">
@@ -26,7 +40,6 @@
     <input type = "button" class="enter" id="btn2" value="ENTER" tabindex="-1">
     <br>
 
-
     <input class="letter" maxlength="1" id="10" onkeyup="autoTab('11')" tabindex="-1"> 
     <input class="letter" maxlength="1" id="11" onkeyup="autoTab('12')" tabindex="-1">
     <input class="letter" maxlength="1" id="12" onkeyup="autoTab('13')" tabindex="-1">
@@ -34,6 +47,7 @@
     <input class="letter" maxlength="1" id="14" tabindex="-1">
     <input type = "button" class="enter" id="btn3" value="ENTER" tabindex="-1">
     <br>        
+
     <input class="letter" maxlength="1" id="15" onkeyup="autoTab('16')" tabindex="-1"> 
     <input class="letter" maxlength="1" id="16" onkeyup="autoTab('17')" tabindex="-1">
     <input class="letter" maxlength="1" id="17" onkeyup="autoTab('18')" tabindex="-1">
@@ -41,6 +55,7 @@
     <input class="letter" maxlength="1" id="19" tabindex="-1">
     <input type = "button" class="enter" id="btn4" value="ENTER" tabindex="-1">
     <br>        
+
     <input class="letter" maxlength="1" id="20" onkeyup="autoTab('21')" tabindex="-1"> 
     <input class="letter" maxlength="1" id="21" onkeyup="autoTab('22')" tabindex="-1">
     <input class="letter" maxlength="1" id="22" onkeyup="autoTab('23')" tabindex="-1">
@@ -48,6 +63,7 @@
     <input class="letter" maxlength="1" id="24" tabindex="-1">
     <input type = "button" class="enter" id="btn5" value="ENTER" tabindex="-1">
     <br>        
+
     <input class="letter" maxlength="1" id="25" onkeyup="autoTab('26')" tabindex="-1"> 
     <input class="letter" maxlength="1" id="26" onkeyup="autoTab('27')" tabindex="-1">
     <input class="letter" maxlength="1" id="27" onkeyup="autoTab('28')" tabindex="-1">
@@ -57,31 +73,12 @@
     <br>    
 </form>
 
+<div class="used">
+
 <h1> Used:</h1>
 <p id="wrong"></p>
-<!--
-<div class="kbd">
-    
 </div>
 
-    <script>
-        function autoTab(field) {
-            document.getElementById(field).focus()
-        }
-
-    </script>
-    -->
 <script src="./wordle1.js"></script>
- <!--   <script>
-        document.addEvenListener(onclick, rowTab);
-        function rowTab() {
-            let x = document.getElementById(field)
-            if (field === 'e') {
-                autoTab('f')
-            }
-        }
-
-    </script>
-   -->
 </body>
 </html>

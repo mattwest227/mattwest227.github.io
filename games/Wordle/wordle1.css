@@ -1,3 +1,42 @@
+html {
+    margin-top: 20px;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+    float:left;
+
+}
+
+.panel {
+    max-width: fit-content ;
+    border: 6px double rgba(77, 188, 108, 0.3);
+    background-color: white;
+    height:auto;
+    margin: 0 30px 30px;
+}
+
+.banner {
+    padding: 8px;
+    background-color: rgb(62, 164, 91);
+}
+
+.inst {
+    font-family: 'Maven Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+form {
+    margin: 30px;
+}
+.used {
+    float: inline-start;
+}
+
 .letter {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -43,7 +82,7 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-
+    max-width: 400px;
     color: rgb(125, 124, 124);
 }
 
@@ -53,7 +92,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-
+    max-width: 400px;
     margin-top: 30px;
     color: black;
 }
