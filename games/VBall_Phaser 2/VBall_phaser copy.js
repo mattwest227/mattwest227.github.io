@@ -22,9 +22,9 @@ const game = new Phaser.Game(config);
 const gameState = {};
 
 function preload() {
-    this.load.image('ball', '/games/VBall_phaser 2/ball.png');
-    this.load.image('player', '/games/VBall_phaser 2/star_88.png');
-    this.load.image('background', '/games/VBall_phaser 2/VBackground.png');
+    this.load.image('ball', '/ball.png');
+    this.load.image('player', '/star_88.png');
+    this.load.image('background', '/VBackground.png');
 };
 
 
