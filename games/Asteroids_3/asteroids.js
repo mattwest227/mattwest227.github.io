@@ -20,11 +20,11 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload () {
-    this.load.image('ship', '/games/Asteroids_3/ship.png');
-    this.load.image('bullet', '/bullet.png');
-    this.load.image('lg_ast', '/lg_asteroid.png');
-    this.load.image('med_ast', '/med_asteroid.png');
-    this.load.image('sm_ast', '/sm_asteroid.png');
+    this.load.image('ship', '/games/Asteroids_3/spr_ship.png');
+    this.load.image('bullet', '/games/Asteroids_3/bullet.png');
+    this.load.image('lg_ast', '/games/Asteroids_3/lg_asteroid.png');
+    this.load.image('med_ast', '/games/Asteroids_3/med_asteroid.png');
+    this.load.image('sm_ast', '/games/Asteroids_3/sm_asteroid.png');
 }
 
 function create () {
