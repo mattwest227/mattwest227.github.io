@@ -19,6 +19,8 @@ const config = {
 
 const game = new Phaser.Game(config);
 
+let score = document.getElementById('sco')
+
 function preload () {
     this.load.image('ship', '/games/Asteroids_3/spr_ship.png');
     this.load.image('bullet', '/games/Asteroids_3/bullet.png');
@@ -135,6 +137,8 @@ function create () {
             //this.physics.velocityFromAngle(medRock.angle, Phaser.Math.RND.between(30,70), medRock.body.velocity);    
             bullet.destroy();
             bigRock.destroy();
+            score += 10;
+            document.getElementById("sco").innerHTML=`Score: ${score}`;
         }
 
 //BULLET AND MEDIUM ROCK COLLIDE
@@ -152,7 +156,8 @@ function create () {
             //this.physics.velocityFromAngle(smallRock.angle, Phaser.Math.RND.between(30,70), smallRock.body.velocity);
             bullet.destroy();
             medRock.destroy();
-          };
+            score += 20;
+            document.getElementById("sco").innerHTML=`Score: ${score}`;         };
 
 //BULLET AND SMALL ROCK COLLIDE
         this.physics.add.collider(smallRocks, bullets, destroySmallRock, checkSmallRock, this) 
@@ -166,20 +171,22 @@ function create () {
         function destroySmallRock() {
             console.log('SMALL ROCK')
             bullet.destroy()
+            rock.pop(smallRock)
             smallRock.destroy()
+            score += 30;
+            document.getElementById("sco").innerHTML=`Score: ${score}`;
           }
-
+console.log(rock)
 }
 
 function update () {
     function checkRocks() {         
-        if (!bigRock && !medRock && !smallRock) {
+        if (rock.length === 1) {
             this.add.rectangle(100,100,100,100, 0x5827FF)
                 this.add.text(300, 300,'NICE JOB').setFontSize(48)
             }
         }
 
-    checkRocks()
     //Rotate rocks
     bigRock.angle += .5;
     smallRock.angle += .5;
@@ -213,6 +220,8 @@ function update () {
         console.log('WORLDBOUNDS');
         this.bullet.destroy();
     }
-}   
+}
+//checkRocks()
+
 }
 
